@@ -15,7 +15,7 @@ import org.technoindiahooghly.studentcompanion.StudentApplication
 import org.technoindiahooghly.studentcompanion.adapter.student.routine.tuesday.RoutineTuesdayListAdapter
 import org.technoindiahooghly.studentcompanion.alarm.student.alarmHandler
 import org.technoindiahooghly.studentcompanion.data.student.TuesdayData
-import org.technoindiahooghly.studentcompanion.databinding.FragmentRoutineTuesdayListBinding
+import org.technoindiahooghly.studentcompanion.databinding.FragmentRoutineListBinding
 import org.technoindiahooghly.studentcompanion.ui.student.routine.RoutineViewPagerDirections
 import org.technoindiahooghly.studentcompanion.viewmodel.student.StudentViewModel
 import org.technoindiahooghly.studentcompanion.viewmodel.student.StudentViewModelFactory
@@ -29,7 +29,7 @@ class RoutineTuesdayListFragment :
             (activity?.application as StudentApplication).studentDatabase.studentDao())
     }
 
-    private var _binding: FragmentRoutineTuesdayListBinding? = null
+    private var _binding: FragmentRoutineListBinding? = null
     private val binding
         get() = _binding!!
 
@@ -38,7 +38,7 @@ class RoutineTuesdayListFragment :
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentRoutineTuesdayListBinding.inflate(inflater, container, false)
+        _binding = FragmentRoutineListBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -53,12 +53,12 @@ class RoutineTuesdayListFragment :
                 this.findNavController().navigate(action)
             }
 
-        binding.tuesdayListRecyclerView.layoutManager = LinearLayoutManager(this.context)
-        binding.tuesdayListRecyclerView.adapter = adapter
+        binding.listRoutineRecyclerView.layoutManager = LinearLayoutManager(this.context)
+        binding.listRoutineRecyclerView.adapter = adapter
 
         viewModel.getTuesday.observe(this.viewLifecycleOwner) { it.let { adapter.submitList(it) } }
 
-        binding.addTuesdayRoutineFAB.setOnClickListener {
+        binding.addClassesFAB.setOnClickListener {
             val action =
                 RoutineViewPagerDirections
                     .actionRoutineViewPager2ToRoutineTuesdayAddUpdateFragment()
