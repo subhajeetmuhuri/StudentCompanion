@@ -2,7 +2,7 @@ package org.technoindiahooghly.studentcompanion
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import org.technoindiahooghly.studentcompanion.databinding.ActivityMainBinding
 
@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navController = findNavController(R.id.navHostFragment)
+        val navController =
+            supportFragmentManager.findFragmentById(R.id.navHostFragment)!!.findNavController()
         binding.bottomNav.setupWithNavController(navController)
     }
 }
