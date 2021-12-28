@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Student Companion</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="subject_bottom_nav">Subjects</string>
+    <string name="routine_bottom_nav">Routine</string>
+    <string name="tasks_bottom_nav">Tasks</string>
+    <string name="add_subject_name_hint">Subject</string>
+    <string name="add_teacher_name_hint">Teacher</string>
+    <string name="add_update_task_name_hint">Task</string>
+    <string name="add_update_task_deadline_hint">Deadline</string>
+    <string name="save_button">Save</string>
+    <string name="to">-</string>
+    <string name="by">by</string>
+    <string name="choose_subject">Subject</string>
+    <string name="start_time_button">Start Time</string>
+    <string name="end_time_button">End Time</string>
+    <string name="add_subjects">Add Subjects</string>
+    <string name="delete_current_subject">Delete selected subject</string>
+    <string name="notifications_on_off">Notifications On/Off</string>
+    <string name="delete_current_class">Delete selected class</string>
+    <string name="delete_current_task">Delete selected task</string>
+    <string name="add_schedule">Add Classes</string>
+    <string name="add_task">Add Tasks</string>
+
+    <string name="yes_alert_dialog">Yes</string>
+    <string name="no_alert_dialog">No</string>
+    <string name="class_remove_success_toast">Successfully removed %1$s class from %2$s\'s schedule</string>
+    <string name="task_remove_success_toast">Task successfully removed: %1$s</string>
+    <string name="class_remove_prompt_title">Removing %1$s class from %2$s\'s schedule</string>
+    <string name="task_remove_prompt_title">Removing task: %1$s</string>
+    <string name="class_remove_prompt_message">Are you sure you want to remove this class on %1$s?</string>
+    <string name="task_remove_prompt_message">Are you sure you want to remove this task?</string>
+    <string name="class_notify_on">Reminding for %1$s class on %2$s!</string>
+    <string name="task_notify_on">Reminding for task: %1$s!</string>
+    <string name="class_notify_off">Reminders disabled for %1$s class on %2$s</string>
+    <string name="task_notify_off">Reminders disabled for task: %1$s</string>
+
+    <string name="class_add_success_toast">Successfully added %1$s class on %2$s</string>
+    <string name="class_update_success_toast">Successfully updated details of %1$s class on %2$s</string>
+    <string name="class_add_update_empty_warning_toast">Properly select all the fields!</string>
+
+    <string name="subject_remove_prompt_title">Removing %1$s</string>
+    <string name="subject_remove_prompt_message">Are you sure you want to remove this subject?</string>
+    <string name="subject_remove_success_toast">Successfully removed %1$s!</string>
+    <string name="subject_add_success_toast">Successfully added %1$s!</string>
+    <string name="subject_update_success_toast">Successfully updated %1$s\'s details!</string>
+
+    <string name="subject_add_empty_warning_toast">Please fill out all fields!</string>
+    <string name="subject_update_empty_warning_toast">Don\'t leave any fields empty!</string>
+</resources>

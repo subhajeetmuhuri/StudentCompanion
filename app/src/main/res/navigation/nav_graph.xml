@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/subjectListFragment">
+
+    <fragment
+        android:id="@+id/subjectListFragment"
+        android:name="org.technoindiahooghly.studentcompanion.ui.student.subject.SubjectListFragment"
+        android:label="fragment_subject_list"
+        tools:layout="@layout/fragment_subject_list">
+        <action
+            android:id="@+id/action_subjectListFragment_to_subjectAddUpdateFragment"
+            app:destination="@id/subjectAddUpdateFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/subjectAddUpdateFragment"
+        android:name="org.technoindiahooghly.studentcompanion.ui.student.subject.SubjectAddUpdateFragment"
+        android:label="fragment_subject_add_update"
+        tools:layout="@layout/fragment_subject_add_update">
+        <action
+            android:id="@+id/action_subjectAddUpdateFragment_to_subjectListFragment"
+            app:destination="@id/subjectListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/subjectListFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/routineViewPager2"
+        android:name="org.technoindiahooghly.studentcompanion.ui.student.routine.RoutineViewPager"
+        android:label="fragment_routine_view_pager"
+        tools:layout="@layout/fragment_routine_view_pager">
+        <action
+            android:id="@+id/action_routineViewPager2_to_routineMondayAddUpdateFragment"
+            app:destination="@id/routineMondayAddUpdateFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_routineViewPager2_to_routineTuesdayAddUpdateFragment"
+            app:destination="@id/routineTuesdayAddUpdateFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_routineViewPager2_to_routineWednesdayAddUpdateFragment"
+            app:destination="@id/routineWednesdayAddUpdateFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_routineViewPager2_to_routineThursdayAddUpdateFragment"
+            app:destination="@id/routineThursdayAddUpdateFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_routineViewPager2_to_routineFridayAddUpdateFragment"
+            app:destination="@id/routineFridayAddUpdateFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_routineViewPager2_to_routineSaturdayAddUpdateFragment"
+            app:destination="@id/routineSaturdayAddUpdateFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/routineMondayAddUpdateFragment"
+        android:name="org.technoindiahooghly.studentcompanion.ui.student.routine.monday.RoutineMondayAddUpdateFragment"
+        android:label="fragment_routine_monday_add_update"
+        tools:layout="@layout/fragment_routine_monday_add_update">
+        <action
+            android:id="@+id/action_routineMondayAddUpdateFragment_to_routineViewPager2"
+            app:destination="@id/routineViewPager2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/routineViewPager2"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/routineTuesdayAddUpdateFragment"
+        android:name="org.technoindiahooghly.studentcompanion.ui.student.routine.tuesday.RoutineTuesdayAddUpdateFragment"
+        android:label="fragment_routine_tuesday_add_update"
+        tools:layout="@layout/fragment_routine_tuesday_add_update">
+        <action
+            android:id="@+id/action_routineTuesdayAddUpdateFragment_to_routineViewPager2"
+            app:destination="@id/routineViewPager2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/routineViewPager2"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/routineWednesdayAddUpdateFragment"
+        android:name="org.technoindiahooghly.studentcompanion.ui.student.routine.wednesday.RoutineWednesdayAddUpdateFragment"
+        android:label="fragment_routine_wednesday_add_update"
+        tools:layout="@layout/fragment_routine_wednesday_add_update">
+        <action
+            android:id="@+id/action_routineWednesdayAddUpdateFragment_to_routineViewPager2"
+            app:destination="@id/routineViewPager2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/routineViewPager2"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/routineThursdayAddUpdateFragment"
+        android:name="org.technoindiahooghly.studentcompanion.ui.student.routine.thursday.RoutineThursdayAddUpdateFragment"
+        android:label="fragment_routine_thursday_add_update"
+        tools:layout="@layout/fragment_routine_thursday_add_update">
+        <action
+            android:id="@+id/action_routineThursdayAddUpdateFragment_to_routineViewPager2"
+            app:destination="@id/routineViewPager2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/routineViewPager2"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/routineFridayAddUpdateFragment"
+        android:name="org.technoindiahooghly.studentcompanion.ui.student.routine.friday.RoutineFridayAddUpdateFragment"
+        android:label="fragment_routine_friday_add_update"
+        tools:layout="@layout/fragment_routine_friday_add_update">
+        <action
+            android:id="@+id/action_routineFridayAddUpdateFragment_to_routineViewPager2"
+            app:destination="@id/routineViewPager2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/routineViewPager2"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/routineSaturdayAddUpdateFragment"
+        android:name="org.technoindiahooghly.studentcompanion.ui.student.routine.saturday.RoutineSaturdayAddUpdateFragment"
+        android:label="fragment_routine_saturday_add_update"
+        tools:layout="@layout/fragment_routine_saturday_add_update">
+        <action
+            android:id="@+id/action_routineSaturdayAddUpdateFragment_to_routineViewPager2"
+            app:destination="@id/routineViewPager2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/routineViewPager2"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="org.technoindiahooghly.studentcompanion.ui.tasks.TaskListFragment"
+        android:label="fragment_task_list"
+        tools:layout="@layout/fragment_task_list">
+        <action
+            android:id="@+id/action_taskListFragment_to_taskAddUpdateFragment"
+            app:destination="@id/taskAddUpdateFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskAddUpdateFragment"
+        android:name="org.technoindiahooghly.studentcompanion.ui.tasks.TaskAddUpdateFragment"
+        android:label="fragment_task_add_update"
+        tools:layout="@layout/fragment_task_add_update">
+        <action
+            android:id="@+id/action_taskAddUpdateFragment_to_taskListFragment"
+            app:destination="@id/taskListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/taskListFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="id"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+</navigation>

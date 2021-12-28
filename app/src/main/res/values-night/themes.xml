@@ -1,0 +1,62 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.StudentCompanion" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorSurface</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/purpleLight</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorPrimaryVariant">@color/purpleDark</item>
+
+        <item name="colorSecondary">@color/redLight</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
+
+    <style name="Style.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardElevation">15dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="cardCornerRadius">6dp</item>
+        <item name="cardBackgroundColor">@color/greenDark</item>
+    </style>
+
+    <style name="Style.Card.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Style.TextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="materialThemeOverlay">@style/Style.TextInput.Overlay</item>
+        <item name="boxStrokeColor">@color/greenLight</item>
+        <item name="hintTextColor">@color/greenLight</item>
+    </style>
+
+    <style name="Style.TextInput.Overlay" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="colorControlActivated">@color/greenLight</item>
+    </style>
+
+    <style name="Style.ExposedDropDown" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/greenLight</item>
+        <item name="hintTextColor">@color/greenLight</item>
+        <item name="endIconTint">@color/greenLight</item>
+    </style>
+
+    <style name="Style.Button" parent="TextAppearance.AppCompat.Widget.Button">
+        <item name="android:backgroundTint">@color/redLight</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Style.TabLayout" parent="Widget.MaterialComponents.TabLayout">
+        <item name="tabIndicatorColor">@color/purpleLight</item>
+        <item name="tabSelectedTextColor">@color/purpleLight</item>
+    </style>
+
+    <style name="Style.BottomNav" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="backgroundTint">@color/purpleDark</item>
+    </style>
+
+    <style name="Theme.StudentCompanion.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/ic_splash_image</item>
+        <item name="android:statusBarColor">?attr/colorSurface</item>
+    </style>
+</resources>
