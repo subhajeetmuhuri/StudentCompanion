@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:hint="@string/add_update_task_name_hint"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -31,7 +30,6 @@
         android:layout_height="wrap_content"
         android:hint="@string/add_update_task_deadline_hint"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/taskAddUpdateText">
 
