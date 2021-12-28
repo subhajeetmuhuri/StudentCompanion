@@ -89,7 +89,7 @@
         android:id="@+id/routineMondayAddUpdateFragment"
         android:name="org.technoindiahooghly.studentcompanion.ui.student.routine.monday.RoutineMondayAddUpdateFragment"
         android:label="fragment_routine_monday_add_update"
-        tools:layout="@layout/fragment_routine_monday_add_update">
+        tools:layout="@layout/fragment_routine_add_update">
         <action
             android:id="@+id/action_routineMondayAddUpdateFragment_to_routineViewPager2"
             app:destination="@id/routineViewPager2"
@@ -108,7 +108,7 @@
         android:id="@+id/routineTuesdayAddUpdateFragment"
         android:name="org.technoindiahooghly.studentcompanion.ui.student.routine.tuesday.RoutineTuesdayAddUpdateFragment"
         android:label="fragment_routine_tuesday_add_update"
-        tools:layout="@layout/fragment_routine_tuesday_add_update">
+        tools:layout="@layout/fragment_routine_add_update">
         <action
             android:id="@+id/action_routineTuesdayAddUpdateFragment_to_routineViewPager2"
             app:destination="@id/routineViewPager2"
@@ -127,7 +127,7 @@
         android:id="@+id/routineWednesdayAddUpdateFragment"
         android:name="org.technoindiahooghly.studentcompanion.ui.student.routine.wednesday.RoutineWednesdayAddUpdateFragment"
         android:label="fragment_routine_wednesday_add_update"
-        tools:layout="@layout/fragment_routine_wednesday_add_update">
+        tools:layout="@layout/fragment_routine_add_update">
         <action
             android:id="@+id/action_routineWednesdayAddUpdateFragment_to_routineViewPager2"
             app:destination="@id/routineViewPager2"
@@ -146,7 +146,7 @@
         android:id="@+id/routineThursdayAddUpdateFragment"
         android:name="org.technoindiahooghly.studentcompanion.ui.student.routine.thursday.RoutineThursdayAddUpdateFragment"
         android:label="fragment_routine_thursday_add_update"
-        tools:layout="@layout/fragment_routine_thursday_add_update">
+        tools:layout="@layout/fragment_routine_add_update">
         <action
             android:id="@+id/action_routineThursdayAddUpdateFragment_to_routineViewPager2"
             app:destination="@id/routineViewPager2"
@@ -165,7 +165,7 @@
         android:id="@+id/routineFridayAddUpdateFragment"
         android:name="org.technoindiahooghly.studentcompanion.ui.student.routine.friday.RoutineFridayAddUpdateFragment"
         android:label="fragment_routine_friday_add_update"
-        tools:layout="@layout/fragment_routine_friday_add_update">
+        tools:layout="@layout/fragment_routine_add_update">
         <action
             android:id="@+id/action_routineFridayAddUpdateFragment_to_routineViewPager2"
             app:destination="@id/routineViewPager2"
@@ -184,7 +184,7 @@
         android:id="@+id/routineSaturdayAddUpdateFragment"
         android:name="org.technoindiahooghly.studentcompanion.ui.student.routine.saturday.RoutineSaturdayAddUpdateFragment"
         android:label="fragment_routine_saturday_add_update"
-        tools:layout="@layout/fragment_routine_saturday_add_update">
+        tools:layout="@layout/fragment_routine_add_update">
         <action
             android:id="@+id/action_routineSaturdayAddUpdateFragment_to_routineViewPager2"
             app:destination="@id/routineViewPager2"

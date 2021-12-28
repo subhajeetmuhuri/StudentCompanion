@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
-    tools:context=".ui.student.routine.monday.RoutineMondayAddUpdateFragment">
+    android:layout_margin="16dp">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/subjectDropdown"
@@ -34,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@id/subjectDropdown">
 
         <Button
-            android:id="@+id/mondayTimeStartText"
+            android:id="@+id/classTimeStartText"
             style="@style/Style.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -50,7 +49,7 @@
             android:textSize="30sp" />
 
         <Button
-            android:id="@+id/mondayTimeEndText"
+            android:id="@+id/classTimeEndText"
             style="@style/Style.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -59,7 +58,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/mondaySaveButton"
+        android:id="@+id/classSaveButton"
         style="@style/Style.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

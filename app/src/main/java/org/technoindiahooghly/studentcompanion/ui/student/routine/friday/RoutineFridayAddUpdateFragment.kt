@@ -16,7 +16,7 @@ import org.technoindiahooghly.studentcompanion.R
 import org.technoindiahooghly.studentcompanion.StudentApplication
 import org.technoindiahooghly.studentcompanion.alarm.student.alarmHandler
 import org.technoindiahooghly.studentcompanion.data.student.Student
-import org.technoindiahooghly.studentcompanion.databinding.FragmentRoutineFridayAddUpdateBinding
+import org.technoindiahooghly.studentcompanion.databinding.FragmentRoutineAddUpdateBinding
 import org.technoindiahooghly.studentcompanion.utils.student.getFormattedTime
 import org.technoindiahooghly.studentcompanion.utils.student.timePickerEndTime
 import org.technoindiahooghly.studentcompanion.utils.student.timePickerStartTime
@@ -36,7 +36,7 @@ class RoutineFridayAddUpdateFragment : Fragment() {
 
     private val navigationArgs: RoutineFridayAddUpdateFragmentArgs by navArgs()
 
-    private var _binding: FragmentRoutineFridayAddUpdateBinding? = null
+    private var _binding: FragmentRoutineAddUpdateBinding? = null
     private val binding
         get() = _binding!!
 
@@ -45,7 +45,7 @@ class RoutineFridayAddUpdateFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentRoutineFridayAddUpdateBinding.inflate(inflater, container, false)
+        _binding = FragmentRoutineAddUpdateBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -58,10 +58,10 @@ class RoutineFridayAddUpdateFragment : Fragment() {
             binding.subjectDropdown.endIconMode = END_ICON_NONE
             binding.subjectSelection.setText(entry.subjectName, TextView.BufferType.SPANNABLE)
 
-            binding.fridayTimeStartText.setText(
+            binding.classTimeStartText.setText(
                 getFormattedTime(requireContext(), entry.fridayStartTime),
                 TextView.BufferType.SPANNABLE)
-            binding.fridayTimeEndText.setText(
+            binding.classTimeEndText.setText(
                 getFormattedTime(requireContext(), entry.fridayEndTime),
                 TextView.BufferType.SPANNABLE)
 
@@ -69,7 +69,7 @@ class RoutineFridayAddUpdateFragment : Fragment() {
             sharedViewModel.setEndTime(entry.fridayEndTime)
 
             chooseStartEndTime(entry.fridayStartTime, entry.fridayEndTime)
-            fridaySaveButton.setOnClickListener { updateNewEntry(entry) }
+            classSaveButton.setOnClickListener { updateNewEntry(entry) }
         }
     }
 
@@ -146,14 +146,14 @@ class RoutineFridayAddUpdateFragment : Fragment() {
             }
 
             chooseStartEndTime()
-            binding.fridaySaveButton.setOnClickListener { addNewEntry() }
+            binding.classSaveButton.setOnClickListener { addNewEntry() }
         }
     }
 
     private fun chooseStartEndTime(startTimeInMills: String = "", endTimeInMills: String = "") {
-        binding.fridayTimeStartText.setOnClickListener {
+        binding.classTimeStartText.setOnClickListener {
             timePickerStartTime(
-                binding.fridayTimeStartText,
+                binding.classTimeStartText,
                 requireContext(),
                 childFragmentManager,
                 sharedViewModel,
@@ -163,9 +163,9 @@ class RoutineFridayAddUpdateFragment : Fragment() {
 
         sharedViewModel.startTime.observe(this.viewLifecycleOwner) { startTime = it }
 
-        binding.fridayTimeEndText.setOnClickListener {
+        binding.classTimeEndText.setOnClickListener {
             timePickerEndTime(
-                binding.fridayTimeEndText,
+                binding.classTimeEndText,
                 requireContext(),
                 childFragmentManager,
                 sharedViewModel,
