@@ -21,12 +21,7 @@
         </activity>
 
         <receiver
-            android:name=".alarm.student.RoutineAlarmReceiver"
-            android:enabled="true"
-            android:exported="false" />
-
-        <receiver
-            android:name=".alarm.tasks.TaskAlarmReceiver"
+            android:name=".alarm.AlarmReceiver"
             android:enabled="true"
             android:exported="false" />
     </application>

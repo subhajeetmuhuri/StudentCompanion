@@ -9,6 +9,7 @@ import android.util.Log
 import java.text.SimpleDateFormat
 import java.util.*
 import org.technoindiahooghly.studentcompanion.R
+import org.technoindiahooghly.studentcompanion.alarm.AlarmReceiver
 
 fun alarmHandler(context: Context, id: Int, subject: String, startTime: String, setAlarm: Boolean) {
     val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
@@ -24,7 +25,7 @@ fun alarmHandler(context: Context, id: Int, subject: String, startTime: String, 
 
     val requestCode = "${dayOfWeek}0${id}".toInt()
 
-    val alarmIntent = Intent(context, RoutineAlarmReceiver::class.java)
+    val alarmIntent = Intent(context, AlarmReceiver::class.java)
     alarmIntent.action = context.getString(R.string.routine_bottom_nav)
 
     val bundleExtra = Bundle()

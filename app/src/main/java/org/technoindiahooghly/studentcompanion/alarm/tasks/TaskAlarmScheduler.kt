@@ -9,6 +9,7 @@ import android.util.Log
 import java.text.SimpleDateFormat
 import java.util.*
 import org.technoindiahooghly.studentcompanion.R
+import org.technoindiahooghly.studentcompanion.alarm.AlarmReceiver
 
 fun alarmHandler(
     context: Context,
@@ -33,7 +34,7 @@ fun alarmHandler(
     val firstAlarmRequestCode = "${id}0${1}".toInt()
     val finalAlarmRequestCode = "${id}0${2}".toInt()
 
-    val alarmIntent = Intent(context, TaskAlarmReceiver::class.java)
+    val alarmIntent = Intent(context, AlarmReceiver::class.java)
     alarmIntent.action = context.getString(R.string.tasks_bottom_nav)
 
     val firstAlarmBundleExtra = Bundle()
