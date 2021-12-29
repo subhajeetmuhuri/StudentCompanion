@@ -56,20 +56,23 @@ class TaskListAdapter(
 
         fun bind(task: Task) {
             binding.taskDoneCheckBox.isChecked = task.taskDone
+            binding.taskListText.text = task.taskName
+            binding.taskDeadlineText.text = getFormattedTime(task.taskDeadline)
 
             if (binding.taskDoneCheckBox.isChecked) {
                 binding.taskListText.apply {
-                    text = task.taskName
                     paintFlags = paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
                 }
-
                 binding.taskDeadlineText.apply {
-                    text = getFormattedTime(task.taskDeadline)
                     paintFlags = paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
                 }
             } else {
-                binding.taskListText.text = task.taskName
-                binding.taskDeadlineText.text = getFormattedTime(task.taskDeadline)
+                binding.taskListText.apply {
+                    paintFlags = paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
+                }
+                binding.taskDeadlineText.apply {
+                    paintFlags = paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
+                }
             }
 
             if (!task.taskNotification) {
