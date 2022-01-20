@@ -52,9 +52,4 @@
     <style name="Style.BottomNav" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
         <item name="backgroundTint">@color/purpleDefault</item>
     </style>
-
-    <style name="Theme.StudentCompanion.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="android:windowBackground">@drawable/ic_splash_image</item>
-        <item name="android:statusBarColor">?attr/colorSurface</item>
-    </style>
 </resources>
